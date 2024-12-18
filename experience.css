@@ -1,0 +1,133 @@
+/* General Reset */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Timeline Styling */
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 1800px;
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 4px;
+  height: 100%;
+  background: #16325c; /* Vertical line color */
+}
+
+/* Timeline Item */
+.timeline__item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  position: relative;
+  padding-left: 50px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.timeline__item:nth-child(even) {
+  animation-delay: 0.2s;
+}
+
+.timeline__item:nth-child(odd) {
+  animation-delay: 0.4s;
+}
+
+/* Timeline Icon */
+.timeline__icon {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  background: #fff;
+  border: 2px solid #16325c;
+  color: #16325c;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  font-size: 1.5em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Timeline Details */
+.timeline__details {
+  flex: 1;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.timeline__role {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.timeline__date {
+  font-style: italic;
+  color: #555;
+  font-size: 0.9em;
+}
+
+.timeline__company {
+  font-weight: bold;
+  color: #16325c;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.timeline__description ul {
+  padding-left: 20px;
+  margin: 0;
+  color: #333;
+}
+
+.timeline__description ul li {
+  margin-bottom: 8px;
+  text-align: justify;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+/* CSS FOR JS*/
+.timeline__item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.timeline__item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

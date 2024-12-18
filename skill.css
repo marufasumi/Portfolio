@@ -1,0 +1,83 @@
+/* General Reset */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Skills Wrapper */
+.skills-wrapper {
+  padding: 24px;
+}
+
+/* Headers for Skill Sections */
+.header {
+  background: #16325c;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-bottom: 16px;
+  text-align: left;
+  animation: fadeIn 1s ease-out; /* Section header fade-in */
+}
+
+/* Badge Container */
+.badge-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+/* Badge Styles */
+.badge {
+  background-color: #f6c403;
+  color: #000;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  text-align: center;
+  white-space: nowrap;
+  display: inline-block;
+  cursor: default;
+  animation: slideUp 0.8s ease-out; /* Individual badges slide in */
+}
+
+/* Hover Effect for Badge */
+.badge:hover {
+  background-color: #f3b000;
+  color: #fff;
+  transform: scale(1.1); /* Slight zoom effect */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+      opacity: 0;
+      transform: translateY(40px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+/* CSS FOR JS */
+.badge {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}

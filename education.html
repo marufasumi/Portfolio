@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./education.css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header id="hero" class="hero-section">
+        <img src="./images/IMG_1977.jpg" alt="Marufa Sultana Sumi" class="hero-image">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to My Portfolio</h1>
+            <div class="social-links">
+                <a href="https://www.facebook.com/marufasumi" class="social-link" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/marufasumi" class="social-link" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:marufasumi081@gmail.com" class="social-link" aria-label="Gmail">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://github.com/marufasumi" class="social-link" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Responsive Navbar -->
+   <nav class="navbar">
+    <div class="hamburger-menu" onclick="toggleNavbar()">
+        <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./education.html">Education</a></li>
+        <li><a href="./experience.html">Professional Experience</a></li>
+        <li><a href="./Skills.html">Technical Skills</a></li>
+        <li><a href="./certification.html">Certifications</a></li>
+        <li><a href="./project.html">Projects</a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+
+        <li class="download-resume">
+            <a href="https://raw.githubusercontent.com/marufasumi/Resume/main/Marufa_Sumi.pdf" download class="download-button">Download Resume</a>
+        </li>
+    </ul>
+</nav>
+<!--EDUCATION COMPONENT START HERE-->
+<div class="education-timeline">
+  <h2 class="timeline-title">Education</h2>
+
+  <!-- Timeline Item: Devmountain -->
+  <div class="timeline-item">
+      <div class="timeline-icon">
+          <img src="./images/Devmountain.png" alt="Devmountain Logo">
+      </div>
+      <div class="timeline-content">
+          <h3>Software Engineer Student</h3>
+          <p><strong>Brightpath cohort</strong></p>
+          <ul>
+              <li>Learned full-stack Software Engineering, including Front-end, Backend, Database Management, Testing, Data Structures, and Algorithms.</li>
+          </ul>
+      </div>
+  </div>
+
+  <!-- Timeline Item: Salesforce -->
+  <div class="timeline-item">
+      <div class="timeline-icon">
+          <img src="./images/Devmountain.png" alt="Salesforce Logo">
+      </div>
+      <div class="timeline-content">
+          <h3>Salesforce Developer Trainee</h3>
+          <ul>
+              <li>Salesforce Development and Administration</li>
+              <li>March 2022 to Nov 2022</li>
+          </ul>
+      </div>
+  </div>
+
+  <!-- Timeline Item: Master of Pharmacy -->
+  <div class="timeline-item">
+      <div class="timeline-icon">
+          <img src="./images/SUB_LOGO.jpg" alt="University Logo">
+      </div>
+      <div class="timeline-content">
+          <h3>Master of Pharmacy</h3>
+          <ul>
+              <li>CGPA: 3.98/4.0</li>
+              <li>Passing Year: 2014</li>
+          </ul>
+      </div>
+  </div>
+
+  <!-- Timeline Item: Bachelor of Pharmacy -->
+  <div class="timeline-item">
+      <div class="timeline-icon">
+          <img src="./images/SUB_LOGO.jpg" alt="University Logo">
+      </div>
+      <div class="timeline-content">
+          <h3>Bachelor of Pharmacy</h3>
+          <ul>
+              <li>CGPA: 3.92/4.0</li>
+              <li>Passing Year: 2013</li>
+          </ul>
+      </div>
+  </div>
+</div>
+
+
+
+<!--EDUCATION COMPONENT END HERE-->
+
+
+             
+
+
+    <script>
+        // Optional: Smooth scrolling for links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <script src="/script.js"></script>
+</body>
+</html>

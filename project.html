@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./project.css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header id="hero" class="hero-section">
+        <img src="./images/IMG_1977.jpg" alt="Marufa Sultana Sumi" class="hero-image">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to My Portfolio</h1>
+            <div class="social-links">
+                <a href="https://www.facebook.com/marufasumi" class="social-link" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/marufasumi" class="social-link" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:marufasumi081@gmail.com" class="social-link" aria-label="Gmail">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://github.com/marufasumi" class="social-link" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+   <!-- Responsive Navbar -->
+   <nav class="navbar">
+    <div class="hamburger-menu" onclick="toggleNavbar()">
+        <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./education.html">Education</a></li>
+        <li><a href="./experience.html">Professional Experience</a></li>
+        <li><a href="./Skills.html">Technical Skills</a></li>
+        <li><a href="./certification.html">Certifications</a></li>
+        <li><a href="./project.html">Projects</a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+
+        <li class="download-resume">
+            <a href="https://raw.githubusercontent.com/marufasumi/Resume/main/Marufa_Sumi.pdf" download class="download-button">Download Resume</a>
+        </li>
+    </ul>
+</nav>
+
+<!--PROJECT COMPONENT START HERE-->
+
+
+    <!-- Project Section -->
+    <section class="projects-section">
+        <div class="projects-grid">
+            <!-- Project Card -->
+            <div class="project-card">
+                <h3 class="project-title">Project 1: Portfolio Website</h3>
+                <p class="project-description">
+                    A personal portfolio website to showcase skills, experience, and projects. Built with HTML, CSS, and JavaScript.
+                </p>
+                <div class="project-links">
+                    <a href="https://demo-portfolio.com" target="_blank" class="project-link">
+                        <i class="fas fa-external-link-alt"></i>Demo
+                    </a>
+                    <a href="https://github.com/username/portfolio" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project Card -->
+            <div class="project-card">
+                <h3 class="project-title">Project 2: E-Commerce App</h3>
+                <p class="project-description">
+                    A fully functional e-commerce web application with user authentication, product listings, and a shopping cart. Built with React, Node.js, and MongoDB.
+                </p>
+                <div class="project-links">
+                    <a href="https://demo-ecommerce.com" target="_blank" class="project-link">
+                        <i class="fas fa-external-link-alt"></i>Demo
+                    </a>
+                    <a href="https://github.com/username/ecommerce" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> 
+                    </a>
+                </div>
+            </div>
+
+            <!-- Additional Projects -->
+            <div class="project-card">
+                <h3 class="project-title">Project 3: Task Management Tool</h3>
+                <p class="project-description">
+                    A task management tool to create, edit, and manage tasks efficiently. Features a Kanban-style board and real-time updates. Built with Django and React.
+                </p>
+                <div class="project-links">
+                    <a href="https://demo-taskmanager.com" target="_blank" class="project-link">
+                        <i class="fas fa-external-link-alt"></i>Demo
+                    </a>
+                    <a href="https://github.com/username/taskmanager" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> 
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+<!--PROJECT COMPONENT END HERE-->
+             
+    <script src="/script.js"></script>
+</body>
+</html>
